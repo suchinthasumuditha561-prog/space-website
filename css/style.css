@@ -1,0 +1,356 @@
+/* General body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0c2a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img {
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav .search-box input {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #111;
+    color: #00bfff;
+    box-shadow: 0 0 10px rgba(0,191,255,0.4);
+}
+
+nav .search-box input::placeholder {
+    color: #aaa;
+}
+
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Planet images */
+.planet {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.planet img {
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+    transition: transform 0.3s;
+}
+
+.planet img:hover {
+    transform: scale(1.05);
+}
+
+/* Comment form */
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0093c9;
+}
+
+/* Comment cards */
+.comment-card {
+    display: flex;
+    background-color: #111;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    border-left: 4px solid #00bfff;
+    gap: 15px;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.comment-card:hover {
+    transform: scale(1.02);
+}
+
+.comment-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comment-card .comment-content {
+    flex: 1;
+}
+
+.comment-card h3 {
+    margin: 0;
+    color: #00bfff;
+}
+
+.comment-card small {
+    color: #999;
+    font-size: 0.8em;
+}
+
+.comment-card p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Form styling */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0093c9;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/solar2.avif') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0093c9;
+}
+
+/* Featured Planets Section */
+.featured-planets {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0b0c2a;
+}
+
+.featured-planets .planet {
+    display: inline-block;
+    margin: 20px;
+    width: 250px;
+    vertical-align: top;
+}
+
+.featured-planets .planet img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+    transition: transform 0.3s;
+}
+
+.featured-planets .planet img:hover {
+    transform: scale(1.05);
+}
+
+.featured-planets h3 {
+    margin: 10px 0 5px 0;
+    color: #00bfff;
+}
+
+/* Hero Section for About Page */
+.about-hero {
+    background: url('../images/solar.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Featured Planets Section reused from Home page */
+.featured-planets {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0b0c2a;
+}
+
+.featured-planets .planet {
+    display: inline-block;
+    margin: 20px;
+    width: 250px;
+    vertical-align: top;
+}
+
+.featured-planets .planet img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+    transition: transform 0.3s;
+}
+
+.featured-planets .planet img:hover {
+    transform: scale(1.05);
+}
+
+.featured-planets h3 {
+    margin: 10px 0 5px 0;
+    color: #00bfff;
+}
+
+.featured-planets p {
+    color: #ccc;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+.planet img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero h1 {
+    min-height: 50px;
+}
+/* Footer */
+footer {
+    background-color: #111;
+    color: #00bfff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 2px solid #00bfff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.site-footer {
+    background: #0b0b0b;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #aaa;
+}
+
+.footer-left a {
+    color: #aaa;
+    margin-right: 12px;
+    font-size: 16px; /* small icons */
+    transition: 0.3s;
+}
+
+.footer-left a:hover {
+    color: #00bfff;
+    transform: scale(1.2);
+}
+
+.footer-center {
+    text-align: center;
+    flex: 1;
+    font-size: 14px;
+}
+
+
